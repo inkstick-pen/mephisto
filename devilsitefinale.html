@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div id="container">
+            <div id="headerArea">
+                
+                
+            </div>
+
+            <div id="flex">
+                
+                <main>
+                    <h1>“As per the terms and conditions, your session has expired. We thank you for your patronage and for fulfilling your end of our deal.</h1>
+                    <h1>“See you on the other side.”</h1>
+        </div>
+        <!-- THIS IS THE CSS !-->
+        <style>
+            /* user styles */
+
+            /* styles are what change the color and sizes of stuff on your site. */
+
+            /* these are variables that are being used in the code
+    these tended to confuse some people, so I only kept 
+    the images as variables */
+
+            :root {
+                /* colors */
+                --content: #970202;
+            }
+
+            /* if you have the URL of a font, you can set it below */
+            /* feel free to delete this if it's not your vibe */
+
+            /* this seems like a lot for just one font and I would have to agree 
+    but I wanted to include an example of how to include a custom font.
+    If you download a font file you can upload it onto your Neocities
+    and then link it! Many fonts have separate files for each style
+    (bold, italic, etc. T_T) which is why there are so many!
+    
+    */
+
+            @font-face {
+                font-family: 'Rubik Distressed';
+                font-style: normal;
+                font-display: swap;
+                font-weight: 200;
+                src: url(https://cdn.jsdelivr.net/fontsource/fonts/rubik-distressed@5.3.0/cyrillic-400-normal.woff2) format(woff2);
+                unicode-range: U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;
+            }
+
+            @font-face {
+                font-family: 'Rubik Distressed';
+                font-style: normal;
+                font-display: swap;
+                font-weight: 200;
+                src: url(https://cdn.jsdelivr.net/fontsource/fonts/rubik-distressed@5.3.0/cyrillic-ext-400-normal.woff2) format(woff2);
+                unicode-range: U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;
+            }
+
+            @font-face {
+                font-family: 'Rubik Distressed';
+                font-style: normal;
+                font-display: swap;
+                font-weight: 200;
+                src: url(https://cdn.jsdelivr.net/fontsource/fonts/rubik-distressed@5.3.0/hebrew-400-normal.woff2) format(woff2);
+                unicode-range: U+0307-0308,U+0590-05FF,U+200C-2010,U+20AA,U+25CC,U+FB1D-FB4F;
+            }
+
+            @font-face {
+                font-family: 'Rubik Distressed';
+                font-style: normal;
+                font-display: swap;
+                font-weight: 200;
+                src: url(https://cdn.jsdelivr.net/fontsource/fonts/rubik-distressed@5.3.0/latin-400-normal.woff2) format(woff2);
+                unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+            }
+
+            @font-face {
+                font-family: 'Rubik Distressed';
+                font-style: normal;
+                font-display: swap;
+                font-weight: 200;
+                src: url(https://cdn.jsdelivr.net/fontsource/fonts/rubik-distressed@5.3.0/latin-ext-400-normal.woff2) format(woff2);
+                unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+            }
+
+            body {
+                font-family: 'Rubik Distressed', serif;
+                font-weight: 200;
+                font-style: normal;
+                background-color: #970202;
+                /* you can delete the line below if you'd prefer to not use an image */
+                color: #fceaff;
+                background-image: var(--body-bg-image);
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            /* below this line is CSS for the layout */
+
+            /* this is a CSS comment
+    to uncomment a line of CSS, remove the * and the /
+    before and after the text */
+
+
+            /* the "container" is what wraps your entire website */
+            /* if you want something (like the header) to be Wider than
+    the other elements, you will need to move that div outside
+    of the container */
+            #container {
+                max-width: 900px;
+                /* this is the width of your layout! */
+                /* if you change the above value, scroll to the bottom
+      and change the media query according to the comment! */
+                margin: 0 auto;
+                /* this centers the entire page */
+            }
+
+            /* the area below is for all links on your page
+    EXCEPT for the navigation */
+            #container a {
+                color: #667fe4;
+                font-weight: bold;
+                /* if you want to remove the underline
+      you can add a line below here that says:
+      text-decoration:none; */
+            }
+
+
+            /* this is the color of the main content area,
+    between the sidebars! */
+            main {
+                background-color: #970202;
+                flex: 1;
+                padding: 20px;
+                order: 2;
+                text-align: center;
+
+            }
+
+            /* what's this "order" stuff about??
+    allow me to explain!
+    if you're using both sidebars, the "order" value
+    tells the CSS the order in which to display them.
+    left sidebar is 1, content is 2, and right sidebar is 3! */
+
+            footer {
+                background-color: #970202;
+                /* background color for footer */
+                width: 100%;
+                height: 40px;
+                padding: 10px;
+                text-align: center;
+                /* this centers the footer text */
+            }
+
+            h1,
+            h2,
+            h3 {
+                color: #ffffff;
+            }
+
+            h1 {
+                font-size: 35px;
+            }
+
+            strong {
+                /* this styles bold text */
+                color: #ffffff;
+            }
+
+            /* BELOW THIS POINT IS MEDIA QUERY */
+
+            /* so you wanna change the width of your page? 
+    by default, the container width is 900px.
+    in order to keep things responsive, take your new height,
+    and then subtrack it by 100. use this new number as the 
+    "max-width" value below
+    */
+
+            @media only screen and (max-width: 800px) {
+                #flex {
+                    flex-wrap: wrap;
+                }
+
+                aside {
+                    width: 100%;
+                }
+            }
+        </style>
+    </body>
+</html>
